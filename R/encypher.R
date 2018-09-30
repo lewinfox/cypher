@@ -12,7 +12,7 @@ encypher <- function(plaintext, key) {
   plaintext <- strsplit(plaintext, "")[[1]]
   key <- toupper(gsub(" ", "", key))
   key <- strsplit(key, "")[[1]]
-  key <- rep(key, length(key) %% length(plaintext) + 1)
+  key <- rep(key, (length(plaintext) %/% length(key)) + 1)
   key <- key[1:length(plaintext)]
   num_plain <- sapply(plaintext, match, LETTERS)
   num_key <- sapply(key, match, LETTERS)

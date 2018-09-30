@@ -12,7 +12,7 @@ decypher <- function(cyphertext, key) {
   cyphertext <- strsplit(cyphertext, "")[[1]]
   key <- toupper(gsub(" ", "", key))
   key <- strsplit(key, "")[[1]]
-  key <- rep(key, length(key) %% length(cyphertext) + 1)
+  key <- rep(key, length(cyphertext) %/% length(key) + 1)
   key <- key[1:length(cyphertext)]
   num_cypher <- sapply(cyphertext, match, LETTERS)
   num_key <- sapply(key, match, LETTERS)
