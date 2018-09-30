@@ -19,6 +19,3 @@ decypher <- function(cyphertext, key) {
   num_plain <- mapply(cypher::modulo_subtract, num_cypher, num_key)
   return(paste(LETTERS[num_plain], collapse = ""))
 }
-
-cyphertext <- "SJKWTVWKOCW"
-key <- "key"
