@@ -1,4 +1,4 @@
-#' ncypher
+#' Encypher
 #'
 #' @param plaintext A character vector of length 1 containing the text to be
 #'   encyphered

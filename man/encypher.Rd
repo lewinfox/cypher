@@ -2,7 +2,7 @@
 % Please edit documentation in R/encypher.R
 \name{encypher}
 \alias{encypher}
-\title{ncypher}
+\title{Encypher}
 \usage{
 encypher(plaintext, key)
 }
@@ -17,5 +17,5 @@ encypher the plaintext}
 A character vector of length 1 containing the encyphered text
 }
 \description{
-ncypher
+Encypher
 }
