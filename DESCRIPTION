@@ -1,0 +1,12 @@
+Package: cypher
+Title: Encypher and Decypher Text Using Vigenere cypher
+Version: 0.0
+Authors@R: person("Lewin", "Appleton-Fox", email = "lewin.a.f@gmail.com",
+                  role = c("aut", "cre"))
+Description: A simple implementation of the Vigenere cypher.
+Depends: R (>= 3.1.0)
+License: GPL3.0
+LazyData: true
+RoxygenNote: 7.0.2
+Suggests: 
+    testthat
